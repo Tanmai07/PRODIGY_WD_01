@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <img src="images/Prodigy_icon_2020.svg.png" alt="logo" id="logo">
+        
+        <!-- menu -->
+        <ul id="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myHome(this)">Home</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myAbout(this)">About</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myServices(this)">Services</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myContact(this)">Contact</a></li>
+        </ul>
+
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <h1 class="heading">Welcome to Our Site</h1>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque numquam incidunt dignissimos sapiente! Dolorem corrupti harum tenetur nulla. Nesciunt quo blanditiis vel in sapiente natus voluptates ratione adipisci dolores facere pariatur eius, cupiditate harum velit quibusdam, veniam id eum aliquam?</p>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <h1 class="heading">About Us</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatum doloremque libero, nesciunt repellendus repellat. Nam eos, provident quae quisquam voluptatibus est illum dicta debitis ea exercitationem laudantium explicabo, ratione et temporibus dolorem alias pariatur sint possimus quod minus!</p>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+        <h1 class="heading">Our Services</h1>
+        <ul id="service">
+            <li>High-Quality Products</li>
+            <li>Expert Consulting</li>
+            <li>Custom Solutions</li>
+            <li>24/7 Customer Support</li>
+            <li>Innovative Strategies</li>
+        </ul>
+    </section>
+    
+    <!-- contact -->
+    <section id="contact">
+        <h1 class="heading">Get in Touch</h1>
+
+        <ul>
+            <li><a href="mailto:abc123@gmail.com" id="mail" onmouseover="mailOver(this)" onmouseout="mailOut(this)">abc123@gmail.com</a></li>
+            <li><img src="images/phone-solid.svg" alt="phone" height="15"> +45272582</li>
+            <li><img src="images/location-dot-solid.svg" alt="location" height="16"> Mira Road, India</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p id="center">&copy; 2024 Mira Road, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
